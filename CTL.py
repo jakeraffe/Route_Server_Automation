@@ -66,7 +66,8 @@ tn = telnetlib.Telnet(HOST)
 #         print(i, final_var)
 #         i += 1
 
-tn.write(b"show ip bgp 8.45.145.0/24")
+# below is a private IP which should be replaced with an appropriate public IP.
+tn.write(b"show ip bgp 192.168.1.0/24")
         
 tn.write(b"exit\n")
 # End looping through ips and exit the router
